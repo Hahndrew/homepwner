@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E37BCF41AE993930030F666 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E37BCF31AE993930030F666 /* Default-568h@2x.png */; };
+		2E37BCF71AE995D40030F666 /* HAHNItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E37BCF61AE995D40030F666 /* HAHNItemsViewController.m */; };
+		2E37BCFA1AE9994B0030F666 /* HAHNItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E37BCF91AE9994B0030F666 /* HAHNItem.m */; };
 		2E8F5DFE1AE86CBC00768C0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F5DFD1AE86CBC00768C0C /* main.m */; };
 		2E8F5E011AE86CBC00768C0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F5E001AE86CBC00768C0C /* AppDelegate.m */; };
 		2E8F5E041AE86CBC00768C0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F5E031AE86CBC00768C0C /* ViewController.m */; };
@@ -25,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E37BCF31AE993930030F666 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2E37BCF51AE995D40030F666 /* HAHNItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAHNItemsViewController.h; sourceTree = "<group>"; };
+		2E37BCF61AE995D40030F666 /* HAHNItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAHNItemsViewController.m; sourceTree = "<group>"; };
+		2E37BCF81AE9994B0030F666 /* HAHNItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAHNItem.h; sourceTree = "<group>"; };
+		2E37BCF91AE9994B0030F666 /* HAHNItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAHNItem.m; sourceTree = "<group>"; };
 		2E8F5DF81AE86CBC00768C0C /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8F5DFC1AE86CBC00768C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8F5DFD1AE86CBC00768C0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +67,7 @@
 		2E8F5DEF1AE86CBC00768C0C = {
 			isa = PBXGroup;
 			children = (
+				2E37BCF31AE993930030F666 /* Default-568h@2x.png */,
 				2E8F5DFA1AE86CBC00768C0C /* Homepwner */,
 				2E8F5E141AE86CBC00768C0C /* HomepwnerTests */,
 				2E8F5DF91AE86CBC00768C0C /* Products */,
@@ -81,6 +90,10 @@
 				2E8F5E001AE86CBC00768C0C /* AppDelegate.m */,
 				2E8F5E021AE86CBC00768C0C /* ViewController.h */,
 				2E8F5E031AE86CBC00768C0C /* ViewController.m */,
+				2E37BCF51AE995D40030F666 /* HAHNItemsViewController.h */,
+				2E37BCF61AE995D40030F666 /* HAHNItemsViewController.m */,
+				2E37BCF81AE9994B0030F666 /* HAHNItem.h */,
+				2E37BCF91AE9994B0030F666 /* HAHNItem.m */,
 				2E8F5E081AE86CBC00768C0C /* Images.xcassets */,
 				2E8F5DFB1AE86CBC00768C0C /* Supporting Files */,
 			);
@@ -194,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8F5E091AE86CBC00768C0C /* Images.xcassets in Resources */,
+				2E37BCF41AE993930030F666 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E37BCF71AE995D40030F666 /* HAHNItemsViewController.m in Sources */,
 				2E8F5E041AE86CBC00768C0C /* ViewController.m in Sources */,
+				2E37BCFA1AE9994B0030F666 /* HAHNItem.m in Sources */,
 				2E8F5E011AE86CBC00768C0C /* AppDelegate.m in Sources */,
 				2E8F5DFE1AE86CBC00768C0C /* main.m in Sources */,
 			);
@@ -389,6 +405,7 @@
 				2E8F5E1D1AE86CBC00768C0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E8F5E1E1AE86CBC00768C0C /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +414,7 @@
 				2E8F5E201AE86CBC00768C0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
