@@ -14,6 +14,9 @@
     NSString *_serialNumber;
     int _valueInDollars;
     NSDate *_dateCreated;
+    
+    HAHNItem *_containedItem;
+    __weak HAHNItem *_container;
 }
 
 + (instancetype)randomItem;
@@ -35,5 +38,12 @@
 - (int)valueInDollars;
 
 - (NSDate *)dateCreated;
+
+- (void)setContainedItem:(HAHNItem *)item;
+- (HAHNItem *)containedItem;
+
+- (void)setContainer:(HAHNItem *)item;
+- (HAHNItem *)container;
+
 
 @end

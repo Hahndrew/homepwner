@@ -111,6 +111,30 @@
     return _dateCreated;
 }
 
+- (void)setContainedItem:(HAHNItem *)item
+{
+    _containedItem = item;
+    
+    // When given an item to contain, the contained
+    // item will be given a poiter to its container
+    item.container = self;
+}
+
+- (HAHNItem *)containedItem
+{
+    return _containedItem;
+}
+
+- (void)setContainer:(HAHNItem *)item
+{
+    _container = item;
+}
+
+- (HAHNItem *)container
+{
+    return _container;
+}
+
 - (NSString *)description
 {
     NSString *descriptionString =
