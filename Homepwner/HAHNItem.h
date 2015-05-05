@@ -9,15 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface HAHNItem : NSObject
-{
-    NSString *_itemName;
-    NSString *_serialNumber;
-    int _valueInDollars;
-    NSDate *_dateCreated;
-    
-    HAHNItem *_containedItem;
-    __weak HAHNItem *_container;
-}
 
 + (instancetype)randomItem;
 
@@ -28,22 +19,12 @@
 
 - (instancetype)initWithItemName:(NSString *)name;
 
-- (void)setItemName:(NSString *)str;
-- (NSString *)itemName;
+@property (nonatomic, strong) HAHNItem *containedItem;
+@property (nonatomic, weak) HAHNItem *container;
 
-- (void)setSerialNumber:(NSString *)str;
-- (NSString *)serialNumber;
-
-- (void)setValueInDollars:(int)v;
-- (int)valueInDollars;
-
-- (NSDate *)dateCreated;
-
-- (void)setContainedItem:(HAHNItem *)item;
-- (HAHNItem *)containedItem;
-
-- (void)setContainer:(HAHNItem *)item;
-- (HAHNItem *)container;
-
+@property (nonatomic, copy) NSString *itemName;
+@property (nonatomic, copy) NSString *serialNumber;
+@property (nonatomic) int valueInDollars;
+@property (nonatomic, readonly, strong) NSDate *dateCreated;
 
 @end
