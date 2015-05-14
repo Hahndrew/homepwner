@@ -23,7 +23,7 @@
     // Create a HAHNItemsViewController
     HAHNItemsViewController *itemsViewController = [[HAHNItemsViewController alloc] init];
     
-    // Pease HAHNItemsViewController's table view in the window hierarchy
+    // Place HAHNItemsViewController's table view in the window hierarchy
     self.window.rootViewController = itemsViewController;
     
     self.window.backgroundColor = [UIColor whiteColor];

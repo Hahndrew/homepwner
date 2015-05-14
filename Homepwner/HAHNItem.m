@@ -88,10 +88,5 @@
     return descriptionString;
 }
 
-- (void)setContainedItem:(HAHNItem *)containedItem
-{
-    _containedItem = containedItem;
-    self.containedItem.container = self;
-}
 
 @end

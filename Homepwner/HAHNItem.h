@@ -19,8 +19,6 @@
 
 - (instancetype)initWithItemName:(NSString *)name;
 
-@property (nonatomic, strong) HAHNItem *containedItem;
-@property (nonatomic, weak) HAHNItem *container;
 
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSString *serialNumber;
