@@ -7,6 +7,8 @@
 //
 
 #import "HAHNItemsViewController.h"
+#import "HAHNItemStore.h"
+#import "HAHNItem.h"
 
 @implementation HAHNItemsViewController
 
@@ -14,6 +16,11 @@
 {
     // Call the superclass's designated initializer
     self = [super initWithStyle:UITableViewStylePlain];
+    if (self) {
+        for (int i = 0; i < 5; i++) {
+            [[HAHNItemStore sharedStore] createItem];
+        }
+    }
     return self;
 }
 
@@ -22,6 +29,11 @@
     return [self init];
 }
 
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    return [[[HAHNItemStore sharedStore] allItems] count];
+}
 
 
 @end
